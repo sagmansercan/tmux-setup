@@ -1,9 +1,7 @@
-#!/usr/bin/bash
-
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
-    selected=$(find ~/source/ ~/me/source/ ~/me/custom-source/ ~/null/ ~/dev/ -mindepth 1 -maxdepth 1 -type d | fzf)
+    selected=$(find ~ ~/source/me ~/source/opensource ~/source/bluecloud ~/dev ~/dev/xperiment ~/null -mindepth 1 -maxdepth 1 -type d | fzf)
 fi
 
 if [[ -z $selected ]]; then
