@@ -1,13 +1,18 @@
 # tmux-setup
+
 fundamental tmux configurations for local setup
 
 ## usage
+
 - clone the repository to whever you want in your local file system
 - create hardlink of the files in the repository to the default paths expected.
 
 ### Notes on Mac
-- `~/.tmux.conf` is written for Ctrl key bindings. If you are using Mac, consider configuring iterm2
-to send Cmd key hexcode signals as Ctrl
+
+- `~/.tmux.conf` is written for Ctrl key bindings. If you are using Mac,
+consider configuring iterm2.
+to send Cmd key hexcode signals as Ctrl. You can refer [ASCII table](https://www.physics.udel.edu/~watson/scen103/ascii.html)
+- iterm2 -> Cmd + , -> Profiles -> Keys -> Key Mappings
 
 Example;
 Suppose you are in this project directory:
