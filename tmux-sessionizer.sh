@@ -1,7 +1,7 @@
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
-    selected=$(find ~ -mindepth 1 -maxdepth 3 -type d | fzf)
+    selected=$(find ~ -mindepth 1 -maxdepth 3 -type d  \( ! -path "*Library*" \) | fzf)
 fi
 
 if [[ -z $selected ]]; then
